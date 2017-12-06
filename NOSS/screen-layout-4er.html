@@ -53,9 +53,16 @@
                     <!-- Put your Content here ###########################################-->
 
                     <h4>Interactive Story</h4>
-                    <button class="btnselect">Story 1</button> <br>
-                    <button class="btnselect">Story 2</button> <br>
-                    <button class="btnselect">Story 3</button>
+                    <button class="btnselect select" id="story1" onclick="storyfunction1()">Story 1</button> <br>
+                    <button class="btnselect select" id="story2" onclick="storyfunction2()">Coming soon!</button> <br>
+                    <button class="btnselect select" id="story3" onclick="storyfunction3()">Coming soon!</button>
+                    
+                    <script>
+                        function storyfunction1() {
+                            this.style.left = parseFloat(getComputedStyle(this).left) + 42 + 'px';
+                        }
+                    </script>
+                    
 
                     <!-- End of content box 4 ############################################-->
                 </div>
