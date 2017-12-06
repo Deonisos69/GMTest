@@ -1,3 +1,7 @@
 .btnselect {
     position: relative;
 }
+
+#dsc {
+    display: none;
+}
