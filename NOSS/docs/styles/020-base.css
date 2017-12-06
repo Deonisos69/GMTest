@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
-base.css                                                                  
-Enthält alle CSS Variabeln und grundlegende Regeln sowie zentrale helper. 
+base.css
+Enthält alle CSS Variabeln und grundlegende Regeln sowie zentrale helper.
 
 Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 ----------------------------------------------------------------------------*/
@@ -10,14 +10,14 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 -----------------------------------------------------------------------------*/
 
 :root {
-    /* 
+    /*
     Farben
     ----------------------------------------*/
     --color-brand: rgb(183, 68, 44);
     --color-text: #000;
     --color-headlines: #666;
     --color-borders: rgba(0, 0, 0, 0.3);
-    /* 
+    /*
     Abstände. Hierzu gibt es auch ein schönes Konzept
     https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62 */
     --content-width: 960px;
@@ -27,9 +27,9 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     --space-inset: 1rem;
     --space-inset-s: 0.5rem;
     --space-inset-l: 1.5rem;
-    /* 
+    /*
     Vertikale Abstände von Stapeln, also
-    Elementen, die untereinander angeordnet 
+    Elementen, die untereinander angeordnet
     werden.
     ----------------------------------------*/
     --space-stack: 1rem;
@@ -38,9 +38,9 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     --space-stack-l: 1.5rem;
     --space-stack-xl: 2rem;
     --space-stack-xxl: 4rem;
-    /* 
+    /*
     Horizontale Abstände von Reihen, also
-    Elementen, die nebeneinander angeordnet 
+    Elementen, die nebeneinander angeordnet
     werden.
     ----------------------------------------*/
     --space-inline: 1rem;
@@ -48,7 +48,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     --space-inline-s: 0.5rem;
     --space-inline-l: 1.5rem;
     --space-inline-xl: 2rem;
-    /* 
+    /*
     Schrift
     ----------------------------------------*/
     --fontfamily: "Helvetica Neue", Helvetica, sans-serif;
@@ -60,26 +60,25 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 }
 
 
-/* Basic Styles 
+/* Basic Styles
 -----------------------------------------------------------------------------*/
+head {
+    font-family: Lato;
+    font-size: 20px;
+    color: black;
+}
 
-html,
 body {
-    font-family: var(--fontfamily);
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--color-text);
+    font-family: Roboto Slab;
+    font-size: 20px;
+    color: black;
 }
 
 h1,
-h2,
-h3,
-h4 {
-    color: var(--color-headlines);
-}
 
 
-/* helper 
+
+/* helper
 -----------------------------------------------------------------------------*/
 
 .hidden {
