@@ -68,6 +68,15 @@ head {
     color: black;
 }
 
+img.TESLA {
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: auto;
+    height: 20px;
+}
+
+
 body {
     font-family: Roboto Slab;
     font-size: 20px;
