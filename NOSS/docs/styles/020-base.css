@@ -51,7 +51,6 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     /*
     Schrift
     ----------------------------------------*/
-    --fontfamily: "Helvetica Neue", Helvetica, sans-serif;
     --fontsize: 1rem;
     --fontsize-s: 0.75rem;
     --fontsize-l: 1.5rem;
@@ -62,61 +61,60 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 /* Basic Styles
 -----------------------------------------------------------------------------*/
-head {
-    font-family: Lato;
-    font-size: 20px;
-    color: black;
+body, html, .main {
+    height: 100%;
 }
 
-li {
+section {
+    min-height: 100%;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #D9D9D9;
+  height: 50px;
+  width: 100%;
+}
+
+/* Navbar links */
+#navbar a {
   float: left;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    font-size: 20px;
-    overflow: hidden;
-    background-color: #D9D9D9;
-}
-
-a.nav-rechts {
-    font-size: 20px;
-    color: black;
-    padding-top: 13px;
-    padding-left: 50px;
-    font-weight: bold;
-    font-family: Lato;
+  display: block;
+  color: black;
+  text-align: center;
+  padding-top: 13px;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Roboto;
+  text-decoration: none;
+  font-kerning: auto;
 }
 
-img.TESLA {
-    float: right;
-    margin-right: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: auto;
-    height: 20px;
+#navbar a:hover {
+  color: #78B1FC;
+
 }
 
-
-li a:hover {
-    color: #78B1FC;
+#TESLA {
+  padding-right: 50px;
+  float: right;
+}
+.content {
+  padding: 16px;
 }
 
-nav.navbar{
-    background-color: #D9D9D9;
-    height: 50px;
-    width: auto;
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
-
-body {
-    font-family: Roboto Slab;
-    font-size: 20px;
-    color: black;
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
-
-
-
 /* helper
 -----------------------------------------------------------------------------*/
 
