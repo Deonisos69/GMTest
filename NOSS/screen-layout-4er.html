@@ -49,17 +49,35 @@
             <!-- Section 1: oben links
 				##########################################################################-->
             <section id="section1" class="bottom-area__item">
-                <div class="screen__content" draggable="true"  data-screen-content>
+                <div class="screen__content" id="select" draggable="true"  data-screen-content>
                     <!-- Put your Content here ###########################################-->
+                    
 
                     <h4>Interactive Story</h4>
-                    <button class="btnselect select" id="story1" onclick="storyfunction1()">Story 1</button> <br>
-                    <button class="btnselect select" id="story2" onclick="storyfunction2()">Coming soon!</button> <br>
-                    <button class="btnselect select" id="story3" onclick="storyfunction3()">Coming soon!</button>
-                    
+                    <ul style="list-style-type:none">
+                        <li><button class="btnselect" id="story1" onclick="ausklappen()" >Story 1</button></li>
+                            <ul id="dsc" style="list-style-type:none">
+                                <li>Genre: Krimi</li>
+                                <li>Altersfreigabe: 16</li>
+                                <li>Beschreibung: MORD TOTSCHLAG MUAHAHHAHAHA</li>
+                                <li><button onclick="storystart()">Geschichte starten</button></li>
+                            </ul>
+                        <li><button class="btnselect" id="story2" >Coming soon!</button></li>
+                        <li><button class="btnselect" id="story3" >Coming soon!</button></li>
+                    </ul>
                     <script>
-                        function storyfunction1() {
-                            this.style.left = parseFloat(getComputedStyle(this).left) + 42 + 'px';
+                        function ausklappen() {
+                            var btn = document.getElementById("dsc");
+                            if (btn.style.display == "none") {
+                                btn.style.display = "block";
+                            } else {
+                                btn.style.display = "none";
+                            }
+                        }
+                        function storystart() {
+                            var xy = document.getElementById("select");
+                                xy.style.display = "none";
+
                         }
                     </script>
                     
