@@ -15,5 +15,23 @@ background-color: gery
 
 }
 
+<<<<<<< HEAD
 h4 { text-align: center
+=======
+
+#dsc {
+    display: none;
+}
+
+#story1p0 {
+    display: none;
+}
+
+#story1p1 {
+    display: none;
+}
+
+h4 { text-align: center;
+>>>>>>> dc77360c777b758990b062ce831bdd10cdded530
  }
+
