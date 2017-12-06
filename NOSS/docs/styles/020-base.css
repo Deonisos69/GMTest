@@ -68,36 +68,52 @@ head {
     color: black;
 }
 
-nav.navbar-default{
-    background-color: #D9D9D9;
-    height: 50px;
-    width: auto;
-
+li {
+  float: left;
 }
-img.TESLA {
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 20px;
+    overflow: hidden;
+    background-color: #D9D9D9;
+}
+
+a.nav-rechts {
+    font-size: 20px;
+    color: black;
+    padding-top: 13px;
     padding-left: 50px;
+    font-weight: bold;
+    font-family: Lato;
+}
+
+img.TESLA {
+    float: right;
+    margin-right: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
     width: auto;
     height: 20px;
 }
 
-p.navbar-text{
 
+li a:hover {
+    color: #78B1FC;
 }
 
-div.dropdown {
-
-
+nav.navbar{
+    background-color: #D9D9D9;
+    height: 50px;
+    width: auto;
 }
+
 
 body {
     font-family: Roboto Slab;
     font-size: 20px;
     color: black;
 }
-
-h1,
 
 
 
