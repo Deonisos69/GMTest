@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -38,17 +39,90 @@ section {
 }
 </style>
 </head>
-<body>
+<style>
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
 
-<a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+<body>
+  <div id="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+
+  <a href="#section1">Konzept</a> |
+  <a href="#section2">Prototyp</a> |
+  <a href="#section3">Dokumentation</a> |
+  <a href="#section4">Team</a>
 
 <div class="main">
   <section></section>
 </div>
 
+<div class="main" id="section1">
+  <section style="background-color:red"></section>
+</div>
 <div class="main" id="section2">
   <section style="background-color:blue"></section>
 </div>
+<div class="main" id="section3">
+  <section style="background-color:green"></section>
+</div>
+<div class="main" id="section4">
+  <section style="background-color:yellow"></section>
+</div>
+
+
 
 </body>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </html>
