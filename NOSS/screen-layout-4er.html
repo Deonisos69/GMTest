@@ -50,7 +50,7 @@
 				##########################################################################-->
             <section id="section1" class="bottom-area__item">
                 <div class="screen__content" id="select" draggable="true"  data-screen-content>
-                    <!-- Put your Content here ###########################################-->
+                    <!-- unser content ###########################################-->
                     
 
                     <h4>Interactive Story</h4>
@@ -76,14 +76,31 @@
                         }
                         function storystart() {
                             var xy = document.getElementById("select");
+                            var yx = document.getElementById("story1p0");
                                 xy.style.display = "none";
+                                yx.style.display = "block";
 
+                        }
+                        function optionselect11a() {
+                            var s1 = document.getElementById("story1p0");
+                            var s1p1 = document.getElementById("story1p1");
+                            s1.style.display = "none";
+                            s1p1.style.display = "block";
+                            
                         }
                     </script>
                     
 
-                    <!-- End of content box 4 ############################################-->
+                    <!-- Story 1 part 0 ############################################-->
                 </div>
+                <div class="screen__content" id="story1p0" draggable="true"  data-screen-content>
+                    <h4>Titel</h4>
+                    <p>Herr Noss gibt euch eine Aufgabe. Erledigt ihr die Aufgabe:</p>
+                    <button class="option1" id="optiona" onclick="optionselect11a()">So schnell wie möglich</button>
+                    <button class="option1" id="optionb">In der letzten Woche</button>
+                    <button class="option1" id="optionc">Im nächsten Semester</button>
+                </div>
+                
             </section>
 
             <!-- Section 2: oben rechts
